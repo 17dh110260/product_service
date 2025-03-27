@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  db:
+    image: mariadb:latest
+    ports: 
+      - 3306:3306
+    container_name: product_service_db
+    environment:
+        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_DATABASE=product_service_db
+        - MYSQL_USER=product_service_usr
+        - MYSQL_PASSWORD=Minhman23199
